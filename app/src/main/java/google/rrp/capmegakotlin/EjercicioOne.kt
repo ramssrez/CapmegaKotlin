@@ -18,6 +18,9 @@ class EjercicioOne : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ejercicio_one)
         btn_calcular_enciso_c.setOnClickListener(this)
+        btn_calcular_enciso_b.setOnClickListener(View.OnClickListener {
+            Toast.makeText(applicationContext, "Prueba de impresion de pantalla del segundo  boton ", Toast.LENGTH_SHORT).show()
+        })
     }
 
     override fun onClick(v: View?) {
