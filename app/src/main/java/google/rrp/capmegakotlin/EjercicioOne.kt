@@ -26,7 +26,6 @@ class EjercicioOne : AppCompatActivity(), View.OnClickListener {
         })
     }
 
-    @SuppressLint("SetTextI18n")
     private fun sumaNumeros(){
 
         if ((edt_first_number.text.toString().isEmpty()) || (edt_second_number.text.toString().isEmpty())){
@@ -36,7 +35,6 @@ class EjercicioOne : AppCompatActivity(), View.OnClickListener {
             val n2 = Integer.parseInt(edt_second_number.text.toString())
             txtv_resultado.text = "La suma de numeros es; ${n1.plus(n2)} "
             Toast.makeText(applicationContext, "La suma de los número es: ${n1.plus(n2)}", Toast.LENGTH_SHORT).show()
-
         }
     }
 
