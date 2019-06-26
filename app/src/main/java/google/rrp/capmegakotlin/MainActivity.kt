@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun go_to_ejercicio_two(view: View) {
-        val intent = Intent(this, EjercicioOne::class.java)
+        val intent = Intent(this, EjercicioTwo::class.java)
         startActivity(intent)
         finish()
     }
