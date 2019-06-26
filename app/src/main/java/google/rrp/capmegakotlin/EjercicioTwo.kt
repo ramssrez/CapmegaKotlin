@@ -31,6 +31,7 @@ class EjercicioTwo : AppCompatActivity(), View.OnClickListener {
     fun check_Button(view: View) {
         val radio : RadioButton = findViewById(rdgp_suma_resta.checkedRadioButtonId)
         Toast.makeText(applicationContext, "Seleccionaste la acción: ${radio.text}", Toast.LENGTH_SHORT).show()
+
 //        val radioId = radioGroup?.checkedRadioButtonId
 //        radioButton = findViewById<RadioButton>(radioId)
 //        Toast.makeText(this, "Seleccionaste la acción:${radioButton.text} ", Toast.LENGTH_SHORT).show()
@@ -49,7 +50,7 @@ class EjercicioTwo : AppCompatActivity(), View.OnClickListener {
 //    }
 
     override fun onClick(v: View?) {
-        Toast.makeText(applicationContext, "", Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "funcion del boton ok", Toast.LENGTH_SHORT).show()
 
     }
 
