@@ -17,8 +17,6 @@ import kotlinx.android.synthetic.main.ejercicio_two.*
  */
 class EjercicioTwo : AppCompatActivity(), View.OnClickListener {
     var radioGroup : RadioGroup? = null
-    var radioButton : RadioButton? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ejercicio_two)
