@@ -23,4 +23,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+    fun go_to_ejercicio_three(view: View) {
+        val intent = Intent(this, EjercicioThree::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
