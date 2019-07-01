@@ -28,4 +28,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    fun go_to_ejercicio_four (view : View){
+        val intent = Intent(this, EjercicioFour::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
