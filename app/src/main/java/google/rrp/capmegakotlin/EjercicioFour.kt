@@ -20,7 +20,6 @@ class EjercicioFour : AppCompatActivity(), View.OnClickListener {
         btn_calcular.setOnClickListener(this)
         val opciones = arrayOf("Suma", "Resta", "Multiplicación", "División")
         spn_options.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, opciones)
-
     }
 
     fun operaciones(){
@@ -47,14 +46,12 @@ class EjercicioFour : AppCompatActivity(), View.OnClickListener {
                     Toast.makeText(this, "DIVISIÓN ENTRE CERO, NO SE PUEDE REALIZAR LA OPERACIÓN", Toast.LENGTH_SHORT ).show();
                 }else {
                     txtv_resultado.text = "La división de los números es: ${n3.div(n4)} "
-                    Toast.makeText(applicationContext, "La división de los número es: ${n3.div(n4)}", Toast.LENGTH_SHORT).show()1
+                    Toast.makeText(applicationContext, "La división de los número es: ${n3.div(n4)}", Toast.LENGTH_SHORT).show()
                 }
                   }
         }
 
         }
-
-
 
     override fun onClick(v: View?) {
         operaciones()
