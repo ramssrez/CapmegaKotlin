@@ -42,9 +42,14 @@ class EjercicioFour : AppCompatActivity(), View.OnClickListener {
             }else if (selec.equals("División")){
                 val n3 = Integer.parseInt(edt_first_number.text.toString()).toDouble()
                 val n4 = Integer.parseInt(edt_second_number.text.toString()).toDouble()
-                txtv_resultado.text = "La división de los números es: ${n3.div(n4)} "
-                Toast.makeText(applicationContext, "La división de los número es: ${n3.div(n4)}", Toast.LENGTH_SHORT).show()
-            }
+                if (n4 == 0.0) {
+                    txtv_resultado.text = "DIVISIÓN ENTRE CERO, NO SE PUEDE REALIZAR LA OPERACIÓN"
+                    Toast.makeText(this, "DIVISIÓN ENTRE CERO, NO SE PUEDE REALIZAR LA OPERACIÓN", Toast.LENGTH_SHORT ).show();
+                }else {
+                    txtv_resultado.text = "La división de los números es: ${n3.div(n4)} "
+                    Toast.makeText(applicationContext, "La división de los número es: ${n3.div(n4)}", Toast.LENGTH_SHORT).show()1
+                }
+                  }
         }
 
         }
