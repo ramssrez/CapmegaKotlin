@@ -31,11 +31,21 @@ class EjercicioFour : AppCompatActivity(), View.OnClickListener {
             val n1 = Integer.parseInt(edt_first_number.text.toString())
             val n2 = Integer.parseInt(edt_second_number.text.toString())
             if(selec.equals("Suma")){
-                txtv_resultado.text = "La suma de numeros es; ${n1.plus(n2)} "
+                txtv_resultado.text = "La suma de los números es: ${n1.plus(n2)} "
                 Toast.makeText(applicationContext, "La suma de los números es: ${n1.plus(n2)}", Toast.LENGTH_SHORT).show()
+            }else if(selec.equals("Resta")){
+                txtv_resultado.text = "La resta de los números es: ${n1.minus(n2)} "
+                Toast.makeText(applicationContext, "La resta de los número es: ${n1.minus(n2)}", Toast.LENGTH_SHORT).show()
+            }else if (selec.equals("Multiplicación")){
+                txtv_resultado.text = "La multiplicación de los números es: ${n1.times(n2)} "
+                Toast.makeText(applicationContext, "La resta de los número es: ${n1.times(n2)}", Toast.LENGTH_SHORT).show()
+            }else if (selec.equals("División")){
+                val n3 = Integer.parseInt(edt_first_number.text.toString()).toDouble()
+                val n4 = Integer.parseInt(edt_second_number.text.toString()).toDouble()
+                txtv_resultado.text = "La división de los números es: ${n3.div(n4)} "
+                Toast.makeText(applicationContext, "La división de los número es: ${n3.div(n4)}", Toast.LENGTH_SHORT).show()
             }
         }
-
 
         }
 
@@ -43,6 +53,5 @@ class EjercicioFour : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         operaciones()
-        Toast.makeText(this, "funcion ok del boton", Toast.LENGTH_SHORT).show()
     }
 }
