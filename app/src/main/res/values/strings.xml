@@ -14,10 +14,7 @@
     <string name="bienvenidos2">Bienvenidos a la siguiente aplicación de ejercicios: Ejercicio numero 2.</string>
     <string name="bienvenidos3">Bienvenidos a la siguiente aplicación de ejercicios: Ejercicio numero 3.</string>
     <string name="bienvenidos4">Bienvenidos a la siguiente aplicación de ejercicios: Ejercicio numero 4.</string>
-
-
+    <string name="bienvenidos5">Ejercicio número 5.</string>
     <string name="resultado">El resultado es: </string>
     <string name="calcular">Calcular</string>
-
-
 </resources>
