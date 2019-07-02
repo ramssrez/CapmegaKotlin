@@ -21,13 +21,16 @@ class EjercicioSix : AppCompatActivity(), View.OnClickListener {
         btn_double.setOnClickListener(this)
     }
 
-
-
-
     override fun onClick(v: View?) {
         when (v?.id){
             R.id.btn_string ->{
                 Log.i("Boton de strings", btn_string.toString())
+            }
+            R.id.btn_double ->{
+                Log.i("boton doubles ", btn_double.toString())
+            }
+            R.id.btn_int ->{
+                Log.i("Boton de enteros", btn_int.toString())
             }
         }
     }
