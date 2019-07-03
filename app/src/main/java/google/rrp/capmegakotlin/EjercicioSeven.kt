@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.ejercicio_seven.*
+import java.nio.file.Files.size
+
+
 
 /*
  * Capmega Soluciones Informáticas S.A.S de C.V
@@ -54,22 +57,25 @@ class EjercicioSeven : AppCompatActivity() , View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id){
             R.id.btn_string ->{
-                Log.i("El array de strings tiene la siguiente dimensión ", strings.size.toString())
+                Log.i("El arrayList de strings tiene la siguiente dimensión ", strings.size.toString())
+                for (i in strings.indices){
+                    Log.i("Array de los Strings en la posicion: $i", strings[i])
+                }
             }
 
             R.id.btn_int ->{
-                Log.i("El array de enteros tiene la siguiente dimensión ", ints.size.toString())
-
+                Log.i("El arrayList de enteros tiene la siguiente dimensión ", ints.size.toString())
+                for (i in ints.indices){
+                    Log.i("Array de los Strings en la posicion: $i", ints[i].toString())
+                }
             }
 
             R.id.btn_double ->{
-                Log.i("El array de doubles tiene la siguiente dimensión ", doubloss.size.toString())
-
+                Log.i("El arrayList de doubles tiene la siguiente dimensión ", doubloss.size.toString())
+                for (i in doubloss.indices){
+                    Log.i("Array de los Strings en la posicion: $i", doubloss[i].toString())
+                }
             }
-
-
-
         }
-
     }
 }
