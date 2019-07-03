@@ -1,7 +1,9 @@
 package google.rrp.capmegakotlin
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.ejercicio_seven.*
 
@@ -12,15 +14,16 @@ import kotlinx.android.synthetic.main.ejercicio_seven.*
  * rramirez@capmega.com
  */
 class EjercicioSeven : AppCompatActivity() , View.OnClickListener {
+    val strings = ArrayList<String>()
+    var ints = ArrayList<Int>()
+    var doubloss = ArrayList<Double>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ejercicio_seven)
-        btn_double.setOnClickListener(this)
+        btn_string.setOnClickListener(this)
         btn_int.setOnClickListener(this)
         btn_double.setOnClickListener(this)
-        var strings = ArrayList<String>()
-        var ints = ArrayList<Int>()
-        var doubloss = ArrayList<Double>()
+
 
         strings.add("Spider")
         strings.add("Tiger")
@@ -47,7 +50,26 @@ class EjercicioSeven : AppCompatActivity() , View.OnClickListener {
         doubloss.add(2556.2454)
     }
 
+    @SuppressLint("LongLogTag")
     override fun onClick(v: View?) {
+        when (v?.id){
+            R.id.btn_string ->{
+                Log.i("El array de strings tiene la siguiente dimensión ", strings.size.toString())
+            }
+
+            R.id.btn_int ->{
+                Log.i("El array de enteros tiene la siguiente dimensión ", ints.size.toString())
+
+            }
+
+            R.id.btn_double ->{
+                Log.i("El array de doubles tiene la siguiente dimensión ", doubloss.size.toString())
+
+            }
+
+
+
+        }
 
     }
 }
