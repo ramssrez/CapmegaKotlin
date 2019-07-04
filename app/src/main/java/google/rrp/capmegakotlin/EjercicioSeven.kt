@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.ejercicio_seven.*
-import java.nio.file.Files.size
 import java.util.*
 import kotlin.collections.ArrayList
 
