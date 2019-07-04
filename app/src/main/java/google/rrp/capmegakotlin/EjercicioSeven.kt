@@ -94,40 +94,56 @@ class EjercicioSeven : AppCompatActivity() , View.OnClickListener {
             }
 
             R.id.btn_names ->{
-                Log.i("El arrayList de los nombres tiene la siguiente dimensión ", nombres.size.toString())
+                Log.i("Enciso 1","Creacion de una lista de 10 elelmentos")
                 for (i in nombres.indices) {
                     Log.i("Array de los nombre al inicio en la posicón: $i", nombres[i])
                 }
                 //Agregar un nuevo nombre
                 nombres.add("Pikachu")   //2.-Se agrega un nombre
-                Log.i("El arrayList queda","De la siguiente manera al completar enciso 2")
+                Log.i("Enciso 2","Se agrega un nombre")
                 for (i in nombres.indices) {
                     Log.i("Array de los nombre al inicio en la posicón: $i", nombres[i])
                 }
-
-
-
+                //Se agrega un nombre a la posicion 4
+                Log.i("enciso 3","Se agrega en la posicion 4")
                 nombres.add(4, "Pichardo") //3.- Se agrega un nombre en la posicion 4
-                nombres[8]  //4.- Obtener el numero 8
-                nombres.removeAt(0)  //5.- quitar la posicion 0
-                nombres[1] = "Goku" //6.- cambio del nombre en la posicion 1
-                nombres[nombres.size - 1] //8.-Obtener el ultimo valor de la lista
-                Log.i("El array ahora tiene la siguiente dimensión ", nombres.size.toString()) //7 .- Tamño del array
+                for (i in nombres.indices) {
+                    Log.i("Array de los nombre al inicio en la posicón: $i", nombres[i])
+                }
+                //obtencion del nombre de la posicion 8
+                Log.i("Enciso 4","mostrar nombre de la posicion 8")
                 Log.i("El nombre de la posicion 8 es ", nombres[8])
-                Log.i("Mi nombre se Raúl se encuentra en la posicion",nombres.indexOf("Raúl").toString()) //9.- Obtener la posicion de la lista en base al nombre
-                Log.i("Se encuentra Abel?", nombres.contains("Abel").toString()) //11.- Saber si se encunetra Abel en el arraylist
-                Log.i("El ultimo nombre es", nombres[nombres.size - 1])
-                Log.i("La lista antes del ordenamiento", "Semuestra de la siguiente manera")
+                //Remover el nombre de la posicion 0
+                Log.i("enciso 5","Se remueve la posicion 0")
+                nombres.removeAt(0)  //5.- quitar la posicion 0
                 for (i in nombres.indices) {
-                    Log.i("Array final de los nombres en la posicón: $i", nombres[i])
+                    Log.i("Array de los nombre al inicio en la posicón: $i", nombres[i])
                 }
+                Log.i("enciso 6","Se remplaza la posicion 1")
+                //Remplazar el nombre de la posicion 1
+                nombres[1] = "Goku" //6.- cambio del nombre en la posicion 1
+                for (i in nombres.indices) {
+                    Log.i("Array de los nombre al inicio en la posicón: $i", nombres[i])
+                }
+                //Dimension del arraylist
+                Log.i("enciso 7","Dimension del array")
+                Log.i("El array ahora tiene la siguiente dimensión ", nombres.size.toString()) //7 .- Tamño del array
+                //Obtencion del ultimo nombre
+                Log.i("enciso 8","obtener el ultimo nombre")
+                Log.i("El ultimo nombre es", nombres[nombres.size - 1]) //8.-Obtener el ultimo valor de la lista
+                //obtener la posicion en base al nombre
+                Log.i("enciso 9","Obtener la posicion donde se encuentra mi nombre")
+                Log.i("Mi nombre se encuentra en la posicion",nombres.indexOf("Raúl").toString()) //9.- Obtener la posicion de la lista en base al nombre
+                //Ordenamiento en orden alfabetico
+                Log.i("enciso 10","ordenar alfabeticamente")
                 Collections.sort(nombres)  //10.- Ordenamiento de los elemnetos alfabeticamente
-
-                Log.i("La lista ordenada queda ", "Queda de la siguiente manera:")
+                Log.i("La lista ordenada queda ", "de la siguiente manera:")
                 for (i in nombres.indices) {
                     Log.i("Array final de los nombres en la posicón: $i", nombres[i])
                 }
-
+                //Existe abel en el array list?
+                Log.i("enciso 11","existe Abel en el arrayList?")
+                Log.i("Se encuentra Abel?", nombres.contains("Abel").toString()) //11.- Saber si se encunetra Abel en el arraylist
             }
         }
     }
